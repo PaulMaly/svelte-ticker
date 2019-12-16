@@ -1,0 +1,39 @@
+{
+    "name": "svelte-ticker",
+    "version": "1.0.0",
+    "description": "Ticker component for Svelte 3",
+    "svelte": "src/index.js",
+    "main": "index.js",
+    "module": "index.mjs",
+    "scripts": {
+        "build": "rollup -c",
+        "prepublishOnly": "npm run lint & npm run build",
+        "lint": "eslint src/*.svelte"
+    },
+    "files": [
+        "src",
+        "index.mjs",
+        "index.js"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PaulMaly/svelte-ticker.git"
+    },
+    "keywords": [
+        "svelte"
+    ],
+    "author": "PaulMaly",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/PaulMaly/svelte-ticker/issues"
+    },
+    "homepage": "https://github.com/PaulMaly/svelte-ticker#readme",
+    "devDependencies": {
+        "eslint": "latest",
+        "eslint-plugin-svelte3": "latest",
+        "rollup": "latest",
+        "rollup-plugin-node-resolve": "latest",
+        "rollup-plugin-svelte": "latest",
+        "svelte": "latest"
+    }
+}
